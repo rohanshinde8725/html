@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+    src="https://kit.fontawesome.com/24c494a6b6.js" 
+    crossorigin="anonymous"
+    ></script>
+    <title>Nisaan GT-R</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        #container{
+            height: 820px;
+            width: 100%;
+        }
+        .img{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 0;
+            bottom: auto;
+        }
+        #container>div>div{
+            height: 40px;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            left: 720px;
+            right: 0px;
+            bottom: auto;
+            color: white;
+        }
+        h4{
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+        button{
+            height: 40px;
+            width: 160px;
+            font-size: 14px;
+            border-radius: 80px;
+            padding: 10px 15px;
+            color: white;
+            border: 0.5px solid white;
+            background-color: rgb(56,93,129); 
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: rgb(194, 7, 7);
+            border: 1px solid rgb(194, 7, 7);
+            font-size: 15px;
+        }
+        .line {
+           position: absolute;
+           border-bottom: 1.5px solid rgb(161,186,206);
+           bottom: 500px;
+           width: 100%;
+           top: 145px;
+        }
+        #main{
+            height: 80px;
+            width: 100%;
+            position: absolute;
+            top: 150px;
+            display: flex;
+            margin: auto;
+            gap: 20px;
+        }
+        #main>div{
+            height: 100%;
+            width: 33%;
+        }
+        .p{
+            margin-left: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        .H5{
+            display: flex;
+            gap: 40px;
+            color: white; 
+            font-family: "Montserrat", sans-serif;            
+            font-size: 16px;
+            font-weight: lighter;
+            font-style: normal;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+        .icons-p{
+            color: white;
+            font-family: "Montserrat", sans-serif;            
+            font-size: 14px;
+            font-weight: lighter;
+            font-style: normal;
+            letter-spacing: 1.5px;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .icons-p:hover{
+            font-size: 16px;
+        }
+        #logo{
+            color: white;
+            position: absolute;
+            top: 400px;
+            left: 100px;
+            font-family: "Montserrat", sans-serif;            
+            cursor: pointer;
+        }
+        .logo-p{
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+        .logo-h{
+            font-size: 45px;
+            margin-top: -10px;
+        }
+
+        #box{
+            height: 300px;
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            margin-left: 100px;
+        }
+        #box>div{
+            height: 100%;
+            width: 50%;
+            margin: auto;
+        }
+        .box-img{
+            height: 280px;
+            width: 95%;
+        }
+        .box-p{
+            margin-top: 50px;
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif; 
+            cursor: pointer;
+           
+        }
+        .box-h{
+            font-family: "Montserrat", sans-serif;            
+            font-size: 35px;
+            margin-top: -10px;
+            margin-left: 10px;
+            font-weight: lighter;
+            cursor: pointer;
+
+        }
+        .box-p2{
+            font-family: "Montserrat", sans-serif;            
+            margin-top: -10px;
+            font-size: 16px;
+            line-height: 25px;
+            cursor: pointer;
+
+        }
+        .box-button{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            width: 180px;
+        }
+        .box-button:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        #des{
+            height: 300px;
+            width: 80%;
+            margin: 100px;
+            display: flex;
+            margin-top: 40px;
+        }
+        #des>div{
+            height: 100%;
+            width: 50%;
+        }
+        .des-h1{
+            font-size: 70px;
+            line-height: 100px;
+            font-family: inherit; 
+            text-align: center;
+            font-weight: lighter;
+            margin-right: 140px;
+            margin-top: 80px;
+            letter-spacing: 3px; 
+            cursor: pointer;
+        }
+        .des-h6{
+            font-size: 12px;
+            font-family: "Nissan Regular", "Nissan Regular", Verdana, Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 80px;         
+            cursor: pointer;
+
+        }
+        .des-h2{
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            word-wrap: normal;
+            text-transform: none;
+            margin-top: 0;
+            letter-spacing: normal;
+            font-weight: lighter;
+            cursor: pointer;
+
+        }
+        .des-p{
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            line-height: 25px;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+
+        }
+        .des-button{
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            width: 170px;
+        }
+        .des-button:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            font-size: 14px;
+        }
+        .des{
+            display: flex;
+        }
+        .des-p2{
+            margin-left: 60px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .des-p2:hover{
+            color: rgb(194, 7, 7);
+        }
+        .line-2{
+            width: 90%;
+            border: 1px solid black;
+            margin: auto;
+            
+        }
+        #tab{
+            height: 300px;
+            width: 65%;
+            margin: auto;
+            display: flex;
+        }
+        .tab-p{
+            color: #1f1e1e;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            text-align: center;
+            font-family: "Nissan Regular", "Nissan Regular", Verdana, Arial, sans-serif;
+            cursor: pointer;
+        }
+        #tab>div{
+            height: 100%;
+            width: 30%;
+            margin: auto;
+        }
+        .tab-h1{
+            font-size: 100px;
+            font-weight: lighter;
+            text-align: center;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        .tab-p2{
+            text-align: center;
+            margin-top: -50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .tab-button{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .tab-button:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        .tab-line1{
+            height: 160px;
+            width: 0;
+            border: 1px solid rgb(153,153,153);
+            margin-left: 278px;
+            margin-top: -180px;
+        }
+        #doc{
+            height: 600px;
+            width: 100%;
+            margin-top: -28px;
+        }
+        .doc-img{
+            height: 100%;
+            width: 100%;
+        }
+        #cal{
+            height: 850px;
+            width: 100%;
+            background-color: rgb(240,236,232);
+        }
+        .icon{
+            height: 100px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            cursor: pointer;
+        }
+        .icon>div{
+            height: 100%;
+            width: 16%;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .cal-icon{
+            font-size: 35px;
+            text-align: center;
+        }
+        .icon-p{
+            font-size: 18px;
+            color: black;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .icon-p:hover,.cal-icon:hover{
+            color: rgb(194, 7, 7);
+        }
+        #cal-2{
+            height: 580px;
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 100px;
+            display: flex;
+            cursor: pointer;
+        }
+        #cal-2>div{
+            height: 100%;
+            width: 48%;
+        }
+        .cal-2-img{
+            height: 100%;
+            width: 100%;
+        }
+        .cal-2-h6{
+            font-size: 14px;
+            color: rgb(0,0,0);
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            font-weight: lighter;
+            font-style: normal;
+            margin-left: 50px;
+            margin-top: 70px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+        .cal-2-h1{
+            font-size: 30px;
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;            
+            font-weight: lighter;
+            font-style: normal;
+            margin-left: 50px;
+            margin-top: -20px;
+        }
+        #tool{
+            height: 60px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+        }
+        #tool>div{
+            height: 100%;
+            width: 32%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .tool-text{
+            text-align: center;
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;            
+            font-weight: lighter;
+            font-size: 15px;
+        }
+        .line-4{
+            height: 0;
+            width: 90%;
+            border: 1px solid rgb(153,153,153);
+            margin: 45px;
+            margin-top: 10px;
+        }
+        .tool-p{
+            margin-left: 50px;
+            margin-top: 45px;
+            font-size: 18px;
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            line-height: 30px;
+            color: #272323;
+        }
+        .tool-button{
+            margin-left: 50px;
+            margin-top: 40px;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+        }
+        .tool-button:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        #cap{
+            height: 660px;
+            width: 85%;
+            margin: auto;
+            margin-top: 70px;
+        }
+        #para{
+            height: 250px;
+            width: 85%;
+            margin: auto;
+            margin-top: 30px;  
+            cursor: pointer; 
+        }
+        .para-h5{
+            text-align: center;
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            font-style: normal;
+            color: #333131;
+            letter-spacing: 2px;
+        }
+        .para-h2{
+            text-align: center;
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            font-style: normal;
+            color: #333131;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: -10px;
+        }
+        .para-p{
+            font-size: 16px;
+            line-height: 27px;
+            margin-left: 20px;
+            font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+            font-weight: lighter
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/site-simp/overview/pfa/2024-nissan-gt-r-sports-car-light-green-side-profile-view.jpg">
+            <img class="img" src="https://www.nissanusa.com/content/dam/Nissan/us/Navigation/sitesimp/nissan-logo-white.svg">
+            <div>
+                <h4>Vehicles</h4>
+                <h4>Shop</h4>
+                <h4>Electric</h4>
+                <h4>Owners</h4>
+                <h4>Dealers</h4>
+                <button>Build & Price <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="line"></div>
+        </div>
+        <div id="main">
+            <div>
+                <p class="p">2024 GT-R®</p>
+            </div>
+            <div>
+                <div class="H5">
+                    <h5>Overview</h5>
+                    <h5>Gallery</h5>
+                    <h5>Feature</h5>
+                    <h5>Space</h5>
+                    <h5>Offers</h5>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="icons-p">Build & Price <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+    </div>
+    <div id="logo">
+        <p class="logo-p">2024 NISSAN</p>
+        <h4 class="logo-h">GT-R®</h4>
+    </div>
+    <div id="box">
+        <div>
+            <img class="box-img" src="https://www.nissanusa.com/content/dam/Nissan/us/smart-digital/custom-content/vlp/site-simp/accessories/gt-r/VLP_Accessories_gt-r_2024_L+M.jpg">
+            </div>
+        <div>
+            <p class="box-p">ACCESSORIES</p>
+            <h2 class="box-h">Customize Your GT-R</h2>
+            <p class="box-p2">Explore the full range of available accessories to make your new Nissan one of a kind.</p>
+            <button class="box-button">View Accessories <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        </div>
+    </div>
+    <div id="des">
+        <div>
+            <h1 class="des-h1">The best
+                <br>GT-R ever</h1>
+        </div>
+        <div>
+            <h6 class="des-h6">Starting At [*]</h6>
+            <h2 class="des-h2">$121,090</h2>
+            <p class="des-p">An unmatched blend of power and soul: the Nissan GT-R. Experience the singular supercar
+                 that sculpts the wind,with enhanced aerodynamics to improve ride and handling for 2024.</p>
+                 <div class="des">
+                    <button class="des-button">Search Inventory <i class="fa-solid fa-arrow-right"></i></button>    
+                    <p class="des-p2">Estimate Payment <i class="fa-solid fa-arrow-right"></i></p>
+                 </div>
+        </div>
+    </div>
+    <div class="line-2"></div>
+    <p class="tab-p">PERFORMANCE</p>
+    <div id="tab">
+        <div>
+            <h1 class="tab-h1">565</h1>
+            <p class="tab-p2">Horsepower[*]</p>
+            <div class="tab-line1"></div>
+        </div>
+        <div>
+            <h1 class="tab-h1">6</h1>
+            <p class="tab-p2">Speed dual-clutch transmission</p>
+            <div class="tab-line1"></div>
+            <button class="tab-button">View all specs <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div>
+            <h1 class="tab-h1">467</h1>
+            <p class="tab-p2">Lb-ft of Torque [*]</p>
+        </div>
+    </div>
+    <div id="doc">
+        <img class="doc-img" src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/site-simp/overview/2024-nissan-gt-r-nismo-driving-down-racetrack.jpg">
+    </div>
+    <div id="cal">
+        <div class="icon">
+            <div class="cal-icon"><i class="fa-solid fa-car"></i>
+                <p class="icon-p">Search Inventory</p>
+            </div>
+            <div class="cal-icon"><i class="fa-solid fa-location-dot"></i>
+                <p class="icon-p">Locate A Dealer</p>
+            </div>
+            <div class="cal-icon"><i class="fa-solid fa-calculator"></i>
+                <p class="icon-p">Estimate Payments</p>
+            </div>
+            <div class="cal-icon"><i class="fa-solid fa-coins"></i>
+                <p class="icon-p">Trade In Value</p>
+            </div>
+            <div class="cal-icon"><i class="fa-solid fa-window-maximize"></i>
+                <p class="icon-p">View A Brochure</p>
+            </div>
+            <div class="cal-icon"><i class="fa-solid fa-calculator"></i>
+                <p class="icon-p">Estimate Credit Score</p>
+            </div>
+        </div>
+        <div id="cal-2">
+            <div>
+                <img class="cal-2-img" src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/site-simp/overview/carousel/2024-nissan-gt-r-aerodynamics.jpg" alt="">
+            </div>
+            <div>
+                <h6 class="cal-2-h6">FEATURES</h6>
+                <h1 class="cal-2-h1">The heart of a legend</h1>
+                <div id="tool">
+                    <div class="tool-text">Enhanced aerodynamics</div>
+                    <div class="tool-text">Twin turbo v6 engine</div>
+                    <div class="tool-text">Dynamic handling</div>
+                </div>
+                <div class="line-4"></div>
+                <p class="tool-p">The 2024 GT-R features a redesigned front bumper, front lip, and canards. At the rear, bumper 
+                    sides and a revised rear spoiler help the GT-R add downforce without increasing drag.</p>
+                <button class="tool-button">View Feature <i class="fa-solid fa-arrow-right"></i></button>  
+            </div>
+        </div>
+    </div>
+    <div id="cap">
+        <img class="cap-img" src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/site-simp/overview/2024-nissan-gtr-engine-being-assembled.jpg" alt="">
+    </div>
+    <div id="para">
+        <h5 class="para-h5">IN THE HANDS OF MASTERS</h5>
+        <h2 class="para-h2">True mastery: from Takumi to expert driver</h2>
+        <p class="para-p">Each GT-R gets to wear a true badge of honor, hand-assembled by one of the world’s five master Takumi craftsmen, who affix their name on a plaque. 
+            AS Class drivers—the top development drivers at Nissan—help create a vehicle that shines on both road and track, including an Autobahn expert, 
+            a “marketability” expert, and “Ringmeisters,” who test the GT-R at the legendary Nürburgring. [*]
+            </p>
+    </div>
+</body>
+</html>
