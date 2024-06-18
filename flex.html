@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+      src="https://kit.fontawesome.com/24c494a6b6.js" 
+      crossorigin="anonymous"
+    ></script>
+    <title>flex</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 100%;
+            margin-top: 30px;
+            background-color: #00baf2;
+        }
+        .box{
+            height: 170px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            color: white;
+            margin:auto;
+            padding: 30px 170px;
+        }
+        .box>div{
+            height: 100%;
+            width: 13%;
+            margin: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            flex-direction: column;
+
+        }
+        .box>div:hover{
+            background-color: rgba(20, 19, 19, 0.259);
+        }
+        img{
+            height: 64px;
+            width: 64px;
+            margin: auto;
+            display: block;
+        }
+        .box>div>p{
+            line-height: 8px;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        #container{
+            height: 300px;
+            width: 100%;
+            background-color: #0400f2;
+        }
+        .des{
+            height: 170px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .des>div{
+            height: 100%;
+            width: 13%;                   
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .des>div:hover{
+            background-color: rgba(20, 19, 19, 0.259);
+        }
+        .des>div>p{
+            line-height: 0px;
+            color: white;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .icon{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recharge & Pay Bills on Paytm.</h1>
+        <div class="box">
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png">
+            <p>Recharge</p>
+            <p>Prepaid</p>
+            <p>Mobile <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png">
+            <p>Pay</p>
+            <p>Electricity</p>
+            <p>Bill <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png">
+            <p>Recharge</p>
+            <p>DTH</p>
+            <p>Connection <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png">
+            <p>Book</p>
+            <p>Gas</p>
+            <p>Cylinder <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1269194/1672827522093.png">
+            <p>Pay</p>
+            <p>Broadband &</p>
+            <p>Landline Bill <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1269198/1672828917034.png">
+            <p>Pay</p>
+            <p>Eduacation</p>
+            <p>Fees <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png">
+            <p>All</p>
+            <p>Payment</p>
+            <p>Services <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        </div>
+    </div>
+    <div id="container">
+        <h1>Book & Buy on Paytm.</h1>
+        <div class="des">
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png">
+            <p>Movie</p>
+            <p>Tickets <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png">
+            <p>Flight</p>
+            <p>Tickets <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png">
+            <p>Bus</p>
+            <p>Tickets <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>    
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1696910636390.png">
+            <p> Train</p>
+            <p>Tickets <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1666185237748.png">
+            <p>Car &</p>
+            <p>Bikes <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png">
+            <p>International</p>
+            <p>Flight <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png">
+            <p>Invests</p>
+            <p>in stocks <span><i class="fa-solid fa-angle-right icon"></i></span></p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
