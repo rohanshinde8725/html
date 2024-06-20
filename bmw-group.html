@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+      src="https://kit.fontawesome.com/24c494a6b6.js" 
+      crossorigin="anonymous"
+    ></script>
+    <title>BMW-GROUP</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            height: 100px;
+            width: 100%;
+            display: flex;
+        }
+        .img-div1{
+            height: 95%;
+            width: 30%;
+            margin: auto;
+            display: flex;
+            margin-left: 5%;
+        }
+        .img-div1>div{
+            height: 70%;
+            width: 20%;
+        }
+        .con-img{
+            height: 90%;
+            width: 90%;
+            margin-top: 20%;
+        }
+        .img-div2{
+            height: 95%;
+            width: 52%;
+            margin: auto;
+            display: flex;
+            margin-left: 15%;
+        }
+        .img-div2>div{
+            height: 100%;
+            width: 55%;
+            display: flex;
+            margin-left: 5%;
+        }
+        .con-p{
+            margin-top: 5%;
+            margin: auto;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: #494949;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .con-line1{
+            height: 40%;
+            border: 0.5px solid rgb(214,214,214);
+            margin: auto;
+
+        }
+        .img-div2>div>div{
+            display: flex;
+            gap: 50%;
+            margin-left: 2%;
+        }
+        .con-p2{
+            margin-top: 5%;
+            margin: auto;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: #494949;
+            font-size: 14px;
+            font-weight: bold; 
+        }
+        .con-line1{
+            height: 40%;
+            border: 0.5px solid rgb(214,214,214);
+            margin: auto;
+            margin: 9% 3%;
+        }
+        .con-line2{
+            height: 40%;
+            border: 0.5px solid rgb(214,214,214);
+            margin: 30% 0%;
+            margin-left: -20%;
+        }
+        .search-icon{
+            margin-top: 40%;
+            margin-left: -30%;
+        }
+        .con-line3{
+            height: 40%;
+            border: 0.5px solid rgb(214,214,214);
+            margin: 30% -30%;
+        }
+        .con-p3{
+            margin-top: 5%;
+            margin: auto;
+            margin-left: 10%;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: #494949;
+            font-size: 14px;
+            font-weight: bold;  
+            display: flex;
+            gap: 20%;
+        }
+        .line4{
+            width: 100%;
+            border: 3px solid rgb(214,214,214);
+        }
+        #des{
+            height: 500px;
+            width: 100%;
+            background-image: url('bmw-group.jpg');
+            background-size: cover;
+            background-image: linear-gradient(rgba(6, 5, 5, 0.357),
+            rgba(9, 8, 8, 0.42)),url(bmw-group.jpg);    
+            margin-top: -6%;    
+        }
+        #des>div{
+            height: 15%;
+            width: 50%;
+            margin: 6% 6%;
+            display: flex;
+        }
+        .des-p{
+            font-size: 35px;
+            font-weight: lighter;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: white;
+            letter-spacing: -1.5px;
+            margin-top: 12%;
+        }
+        .line5{
+            width: 10%;
+            border: 2px solid rgb(214,214,214);
+            margin: auto;
+            margin-top: 2%;
+        }
+        #box{
+            height: 450px;
+            width: 100%;
+            margin-top: 1%;
+            background-color: rgb(242,242,242);
+        }
+        .box-1{
+            height: 100px;
+            width: 50%;
+            font-size: 25px;
+            margin-top: 4%;
+            margin-left: 6%;
+        }
+        .box-p{
+            font-size: 35px;
+            font-weight: lighter;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            margin-top: 1%;
+            color: rgb(73,73,73);
+        }
+        .box-2{
+            height: 250px;
+            width: 90%;
+            margin: auto;
+            margin-top: 2%;
+            display: flex;
+        }
+        .box-2>div{
+            height: 100%;
+            width: 23%;
+            margin: auto;
+            background-color: white;
+        }
+        .box2-img{
+            height: 80%;
+            width: 100%;
+        }
+        .box-2 P{
+            font-weight: bolder;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            margin-left: 3%;
+            margin-top: 3%;
+            color: rgb(73,73,73);
+        }
+        #main{
+            height: 550px;
+            width: 100%;
+            margin-top: 2%;
+        }
+        .main-1{
+            height: 100px;
+            width: 50%;
+            font-size: 25px;
+            margin-top: 4%;
+            margin-left: 6%;
+        }
+        .main-1 p{
+            font-weight: bolder;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: rgb(73,73,73);
+            margin-top: 1%;
+        }
+        .main-2{
+            height: 370px;
+            width: 90%;
+            margin-left: 6%;
+            display: flex;
+        }
+        .main-2>div{
+            height: 100%;
+            width: 31%;
+            margin: auto;
+            box-shadow: #1a1919;
+        }
+        .main2-img{
+            height: 100%;
+            width: 100%;
+        }
+        .main2-h2{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: rgb(0, 0, 0);
+            margin-top: -90%;
+            margin-left: 7%;
+        }
+        .main2-h3{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: rgb(255, 252, 252);
+            margin-top: -90%;
+            margin-left: 7%;
+        }
+        .bgcolor{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(242,242,242)
+
+        }
+        #big{
+            height: 2000px;
+            width: 100%;
+            background-color: rgb(242,242,242)
+
+        }
+        .big-1{
+            height: 100px;
+            width: 50%;
+            font-size: 25px;
+            margin-left: 6%;
+        }
+        .big-p{
+            font-weight: bolder;
+            font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
+            color: rgb(73,73,73);
+            margin-top: 1%;
+        }
+        .big-2{
+            height: 580px;
+            width: 100%;
+            display: flex;
+        }
+        .big2-img1{
+            height: 530px;
+            width: 60%;
+            margin: 3% 6%;
+        }
+        .big2-img{
+            height: 100%;
+            width: 100%;
+        }
+        .big2-text{
+            height: 530px;
+            width: 30%;
+            margin-top: 3%;
+            margin-left: -5%;
+        }
+        .big2-h1{
+            font-size: 25px;
+            font-weight: lighter;
+            font-family: "BMWGroupTNCondensedProTT-Regular", Tahoma, Geneva, sans-serif;            color: rgb(92, 91, 91);
+            margin-top: 45%;
+            text-transform: uppercase;
+        }
+        .big2-p{
+            font-size: 15px;
+            font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
+            color: #494949;
+            letter-spacing: 1px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="img-div1">
+            <div>
+                <img class="con-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/logo/svg/Logo_BMW_GROUP.svg" alt="">
+            </div>
+            <div>
+                <img class="con-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/logo/svg/Logo_BMW.svg" alt="">
+            </div>
+            <div>
+                <img class="con-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/logo/svg/Logo_MINI.svg" alt="">
+            </div>
+            <div>
+                <img class="con-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/logo/svg/Logo_Rolls-Royce.svg" alt="">
+            </div>
+        </div>
+        <div class="img-div2">
+            <div>
+                <p class="con-p">News site</p>
+                <p class="con-p">Careers</p>
+                <p class="con-p">Downloads</p>
+            <div class="con-line1"></div>
+            <div>
+                <p class="con-p2">DE</p>
+                <p class="con-p2">EN</p>
+                <div class="con-line2"></div>
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="con-line3"></div>
+                <p class="con-p3">Menu <i class="fa-solid fa-bars"></i></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="line4"></div>
+    <div id="des">
+        <div>
+            <p class="des-p">THE BMW VISION NEUE KLASSE X.</p>
+        </div>
+    </div>
+    <div class="line5"></div>
+    <div id="box">
+        <div class="box-1">
+            <i class="fa-solid fa-bars"></i>
+            <p class="box-p">THE BMW GROUP AT A GLANCE.</p>
+        </div>
+        <div class="box-2">
+            <div>
+                <img class="box2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_1610/columncontrol_copy_c/columncontrolparsys/poolteaser.coreimg.82.480.jpeg/1707217969663/720x480-unternehmen-bmw-group.jpeg">
+                <p>COMPANY.</p>
+            </div>
+            <div>
+                <img class="box2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_1610/columncontrol_copy_c/columncontrolparsys/poolteaser_copy.coreimg.82.480.jpeg/1707217992377/p90486324-highres-the-new-bmw-i7-xdriv-720x480.jpeg">
+                <P>INNOVATION.</P>
+            </div>
+            <div>
+                <img class="box2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_1610/columncontrol_copy_c/columncontrolparsys/poolteaser_copy_815219951.coreimg.82.480.jpeg/1714995452179/720x480-nachhaltigkeit.jpeg">
+                <P>SUSTAINABILYTY.</P>
+            </div>
+            <div>
+                <img class="box2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_1610/columncontrol_copy_c/columncontrolparsys/poolteaser_copy_copy.coreimg.82.480.jpeg/1714995459714/720x480-investor-relations-crosslink-teaser-kennzahlen.jpeg">
+                <P>INVESTOR RELATION.</P>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main-1">
+             <i class="fa-solid fa-bars"></i>
+             <p>BE INSPIRED</p>
+        </div>
+        <div class="main-2">
+            <div>
+                <img class="main2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_copy/columncontrol/columncontrolparsys/teasertextimage_0_co_2062421222.coreimg.82.852.jpeg/1705591454194/720x720-nachhaltigkeit.jpeg">
+                <h2 class="main2-h2">WE MAKE THE BMW GROUP SUSTAINABLE.</h2>
+            </div>
+            <div>
+                <img class="main2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_copy/columncontrol/columncontrolparsys/teasertextimage_0_co.coreimg.82.852.png/1715078867638/bmw-key-visual-report-ohne-logo-720.png">
+                <h3 class="main2-h3">QUARTERLY STATEMENT TO 31 MARCH 2024.</h3>
+            </div>
+            <div>
+                <img class="main2-img" src="https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/_jcr_content/main/layoutcontainer_copy/columncontrol/columncontrolparsys/teasertextimage_0_co_2146410633.coreimg.82.852.jpeg/1708072911936/ac24-website-720x720.jpeg">
+                <h2 class="main2-h2">BMW GROUP ANNUAL CONFERENCE 2024.</h2>
+            </div>       
+        </div>
+    </div>
+    <div class="bgcolor"></div>
+    <div id="big">
+        <div class="big-1">
+            <i class="fa-solid fa-bars"></i>
+            <p class="big-p">OUR CORRENT TOPICS</p>
+        </div>
+        <div class="big-2">
+            <div class="big2-img1">
+                <img class="big2-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/1280x854_Vorschau_Artcar.png">
+            </div>
+            <div class="big2-text">
+                <h1 class="big2-h1">20th BMW ART CAR SUPPORTS ARTISTS.</h1>
+                <p class="big2-p">The 20th BMW Art Car by Julie Mehretu cuts a dash at its World premiere. 
+                    The Artist joins forces with the BMW Group to launch a series of sponsorship
+                    projects for up-and-coming artists in Africa.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
