@@ -7,9 +7,11 @@
       src="https://kit.fontawesome.com/24c494a6b6.js" 
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="xyz.css">
     <title>BMW-GROUP</title>
     <style>
-        body{
+        body, html{
+            overflow-x: hidden;
             margin: 0;
             padding: 0;
         }
@@ -19,166 +21,163 @@
             display: flex;
         }
         .img-div1{
-            height: 95%;
-            width: 30%;
+            height: 13vh;
+            width: 30vw;
             margin: auto;
             display: flex;
-            margin-left: 5%;
+            margin: 0 3vw;
+            align-items: center;
+            justify-content: center;
         }
         .img-div1>div{
-            height: 70%;
-            width: 20%;
+            height: 10vh;
+            width: 10vw;
         }
         .con-img{
-            height: 90%;
-            width: 90%;
-            margin-top: 20%;
-        }
-        .con-img:hover{
+            height: 6vh;
+            width: 6vw;
+            margin-top: 2vw;
             cursor: pointer;
-            width: 95%;
-            transition: 0.5s;
         }
         .img-div2{
-            height: 95%;
-            width: 52%;
+            height: 15vh;
+            width: 50vw;
             margin: auto;
             display: flex;
-            margin-left: 15%;
+            margin-left: 13vw;
         }
         .img-div2>div{
-            height: 100%;
-            width: 55%;
+            height: 15vh;
+            width: 28vw;
             display: flex;
-            margin-left: 5%;
+            align-items: center;
+            justify-content: space-between;
         }
         .con-p{
-            margin-top: 5%;
+            margin-top: 1vh;
             margin: auto;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: #494949;
-            font-size: 14px;
+            font-size: 1vw;
             font-weight: bold;
         }
         .con-p:hover{
             color: #000;
             cursor: pointer;
         }
-        .con-line1{
-            height: 40%;
-            border: 0.5px solid rgb(214,214,214);
-            margin: auto;
-
-        }
         .img-div2>div>div{
             display: flex;
             gap: 50%;
-            margin-left: 2%;
+            margin-left: .25vw;
         }
         .con-p2{
-            margin-top: 5%;
+            margin-top: 5vh;
             margin: auto;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: #494949;
-            font-size: 14px;
+            font-size: 1vw;
             font-weight: bold; 
+            justify-content: space-between;
         }
         .con-p2:hover{
             color: #000;
             cursor: pointer;
         }
         .con-line1{
-            height: 40%;
-            border: 0.5px solid rgb(214,214,214);
+            height: 5vh;
+            border: .05vw solid rgb(214,214,214);
             margin: auto;
-            margin: 9% 3%;
         }
         .con-line2{
-            height: 40%;
+            height: 5vh;
             border: 0.5px solid rgb(214,214,214);
-            margin: 30% 0%;
-            margin-left: -20%;
+            margin: auto;
+            margin-left: -1vw;
         }
         .search-icon{
-            margin-top: 40%;
-            margin-left: -30%;
+            align-items: center;
+            margin-top: 2.8vh;
+            margin-left: -1vw;
+        }
+        .search-icon:hover{
+            cursor: pointer;
         }
         .con-line3{
-            height: 40%;
-            border: 0.5px solid rgb(214,214,214);
-            margin: 30% -30%;
+            height: 5vh;
+            border: .05vw solid rgb(214,214,214);
+            margin: 1vh -.5vw;
         }
         .con-p3{
-            margin-top: 5%;
+            margin-top: 5vh;
             margin: auto;
-            margin-left: 10%;
+            margin-left: .3vw;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: #494949;
-            font-size: 14px;
+            font-size: 1vw;
             font-weight: bold;  
             display: flex;
-            gap: 20%;
+            gap: .5vw;
         }
         .con-p3:hover{
             color: #000;
             cursor: pointer;
         }
         .line4{
-            width: 100%;
-            border: 3px solid rgb(214,214,214);
+            width: 100vw;
+            border: .7vh solid rgb(214,214,214);
         }
         #des{
             height: 470px;
-            width: 100%;
+            width: 100vw;
             background-image: url('bmw-group.jpg');
             background-size: cover;
             background-image: linear-gradient(rgba(6, 5, 5, 0.357),
             rgba(9, 8, 8, 0.42)),url(bmw-group.jpg);    
-            margin-top: -6%;    
+            margin-top: -13vh;    
         }
         #des>div{
-            height: 15%;
-            width: 50%;
-            margin: 6% 6%;
+            height: 10vh;
+            width: 50vw;
+            margin: 13vh 8vw;
             display: flex;
         }
         .des-p{
-            font-size: 35px;
+            font-size: 2.5vw;
             font-weight: lighter;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: white;
             letter-spacing: -1.5px;
-            margin-top: 12%;
+            margin-top: 7vh;
         }
         .des-p:hover{
             cursor: pointer;
             color: bisque;
         }
         .line5{
-            width: 10%;
-            border: 2px solid rgb(214,214,214);
+            width: 10vw;
+            border: .2vw solid rgb(214,214,214);
             margin: auto;
-            margin-top: 2%;
+            margin-top: 10vh;
         }
         #box{
             height: 450px;
-            width: 100%;
-            margin-top: 1%;
+            width: 100vw;
+            margin-top: 1vh;
             background-color: rgb(242,242,242);
         }
         .box-1{
-            height: 100px;
-            width: 50%;
-            font-size: 25px;
-            margin-top: 4%;
-            margin-left: 6%;
-            padding-top: 3%;
+            height: 10vh;
+            width: 50vw;
+            font-size: 2vw;
+            margin-top: 10vh;
+            margin-left: 6vw;
+            padding: 5vh 0;
         }
         .box-p{
-            font-size: 35px;
+            font-size: 2.5vw;   
             font-weight: lighter;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
-            margin-top: 1%;
+            margin-top: 1.5vh;
             color: rgb(73,73,73);
         }
         .box-p:hover{
@@ -187,30 +186,31 @@
         }
         .box-2{
             height: 250px;
-            width: 90%;
+            width: 90vw;
             margin: auto;
-            margin-top: 2%;
+            margin-top: 2.5vh;
             display: flex;
         }
         .box-2>div{
-            height: 100%;
-            width: 23%;
+            height: 38vh;
+            width: 21vw;
             margin: auto;
             background-color: white;
         }
         .box2-img{
-            height: 80%;
-            width: 100%;
+            height: 33vh;
+            width: 21vw;
             transition: transform .75s ease-out;
         }
         .box2-img:hover{
             cursor: pointer;
         }
         .box-2 P{
+            font-size: 1.1vw;
             font-weight: bolder;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
-            margin-left: 3%;
-            margin-top: 3%;
+            margin-left: 1vw;
+            margin-top: 1vh;
             color: rgb(73,73,73);
         }
         .box-2 p:hover{
@@ -219,168 +219,171 @@
         }
         #main{
             height: 550px;
-            width: 100%;
+            width: 100vw;
             margin-top: 2%;
         }
         .main-1{
-            height: 100px;
-            width: 50%;
-            font-size: 25px;
-            margin-top: 4%;
-            margin-left: 6%;
+            height: 15vh;
+            width: 50vw;
+            font-size: 2vw; 
+            margin-top: 4vh;
+            margin-left: 6vw;
         }
         .main-1 p{
             font-weight: bolder;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: rgb(73,73,73);
-            margin-top: 1%;
+            margin-top: 1vh;
         }
         .main-1 p:hover{
             color: #000;
             cursor: pointer;
         }
         .main-2{
-            height: 370px;
-            width: 90%;
-            margin-left: 6%;
+            height: 60vh;
+            width: 90vw;
+            margin-left: 4.7vw;
             display: flex;
         }
         .main-2>div{
-            height: 100%;
-            width: 31%;
+            height: 60vh;
+            width: 28vw;
             margin: auto;
             box-shadow: #1a1919;
         }
         .main2-img{
-            height: 100%;
-            width: 100%;
+            height: 60vh;
+            width: 28vw;
         }
         .main2-h1{
-            font-size: 30px;
+            font-size: 2vw;
             font-weight: bold;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: rgb(0,0,0);
-            margin-top: -90%;
-            margin-left: 7%;
+            margin-top: -55vh;
+            margin-left: 2vw;
         }
         .main2-h2{
-            font-size: 30px;
+            font-size: 2vw;
             font-weight: bold;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: rgba(241, 229, 9, 0.881);
-            margin-top: -90%;
-            margin-left: 7%;
+            margin-top: -55vh;
+            margin-left: 2vw;
         }
         .main2-h3{
-            font-size: 30px;
+            font-size: 2vw; 
             font-weight: bold;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: rgb(255, 255, 255);
-            margin-top: -90%;
-            margin-left: 7%;
+            margin-top: -55vh;
+            margin-left: 2vw;
         }
         #big{
-            height: 3000px;
-            width: 100%;
+            height: 425vh;
+            width: 100vw;
             background-color: rgb(242,242,242);
         }
         .big-1{
-            height: 100px;
-            width: 50%;
-            font-size: 25px;
-            margin-left: 6%;
-            padding-top: 5%;
+            height: 10vh;
+            width: 50vw;
+            font-size: 2vw;
+            margin-left: 6vw;
+            padding-top: 7vh;
         }
         .big-p{
-            font-size: 25px;
+            font-size: 2vw;
             font-weight: bolder;
             font-family: "BMWGroupTNCondensedProTT-Bold", Charcoal, sans-serif;
             color: rgb(73,73,73);
-            margin-top: 1%;
+            margin-top: 1vh;
         }
         .big-p:hover{
             color: #000;
             cursor: pointer;
         }
         .big-2{
-            height: 580px;
-            width: 100%;
+            height: 95vh;
+            width: 100vw;
+            margin: 1vh 0;
             display: flex;
         }
         .big2-img1{
-            height: 530px;
-            width: 60%;
-            margin: 3% 6%;
+            height: 80vh;
+            width: 60vw;
+            margin: 10vh 5.7vw;
         }
         .big2-img{
-            height: 100%;
-            width: 100%;
+            height: 80vh;
+            width: 60vw;
         }
         .big2-text{
-            height: 530px;
-            width: 30%;
-            margin-top: 3%;
-            margin-left: -5%;
+            height: 80vh;
+            width: 30vw;
+            margin-top: 10vh;
+            margin-left: -4vw;
         }
         .big2-h1{
-            font-size: 25px;
+            font-size: 2vw;
             font-weight: lighter;
-            font-family: "BMWGroupTNCondensedProTT-Regular", Tahoma, Geneva, sans-serif;            color: rgb(92, 91, 91);
-            margin-top: 45%;
+            font-family: "BMWGroupTNCondensedProTT-Regular", Tahoma, Geneva, sans-serif;            
+            color: rgb(92, 91, 91);
             text-transform: uppercase;
+            margin: 30vh 0;
         }
         .big2-h1:hover{
             color: black;
             cursor: pointer;
         }
         .big2-p{
-            font-size: 15px;
+            font-size: 1.2vw;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
             color: #494949;
-            letter-spacing: 1px;
-            line-height: 20px;
+            letter-spacing: .10vw;
+            line-height: 3.2vh;
+            margin: -28vh 0;
         }
         .big2-p:hover{
             cursor: pointer;
         }
         #card{
-            height: 480px;
-            width: 88%;
+            height: 65vh;
+            width: 88vw;
             margin: auto;
-            margin-top: 3%;
+            margin-top: 3vh;
             display: flex;
         }
         #card>div{
-            height: 100%;
-            width: 30%;
+            height: 65vh;
+            width: 26vw;
             margin: auto;
         }
         .card-img{
-            height: 54%;
-            width: 100%;
+            height: 37vh;
+            width: 25vw;
         }
         .card-h1 {
-            font-size: 25px;
+            font-size: 1.8vw;
             letter-spacing: 0.5px;
             font-weight: lighter;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
-            margin-top: 22px;
+            margin-top: 3vh;
             color: #494949;
         }
         .card-h2 {
-            font-size: 25px;
+            font-size: 1.8vw;
             letter-spacing: 0.5px;
             font-weight: lighter;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
-            margin-top: 22px;
+            margin-top: 3vh;
             color: #494949;
         }
         .card-h3{
-            font-size: 25px;
+            font-size: 1.8vw;
             letter-spacing: 0.5px;
             font-weight: lighter;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
-            margin-top: 22px;
+            margin-top: 3vh;
             color: #494949;
         }
         .card-h1:hover{
@@ -396,103 +399,641 @@
             cursor: pointer;
         }
         #cap{
-            height: 500px;
-            width: 88%;
+            height: 78vh;
+            width: 88vw;
             margin: auto;
             display: flex;
         }
         .cap-1{
-            height: 100%;
-            width: 37%;
+            height: 78vh;
+            width: 30vw;
         }
         .cap-2{
-            height: 100%;
-            width: 65%;
-            border: 1px solid pink;
-            margin-left: 2%;
+            height: 78vh;
+            width: 60vw;
+            margin-left: 2vw;
         }
         .cap-img{
-            height: 100%;
-            width: 100%;
+            height: 78vh;
+            width: 60vw;
         }
         .cap-h1{
-            font-size: 30px;
+            font-size: 2.2vw;
             font-weight: 300;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
             color: #494949;
-            margin-top: 40%;
-            margin-left: 3%;
+            margin-top: 28vh;
+            margin-left: 2vw;
         }
         .cap-h1:hover{
             color: black;
             cursor: pointer;
         }
         .cap-p{
-            font-size: 16px;
+            font-size: 1.1vw;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
             color: #494949;
-            margin-left: 3%;
-            margin-top: 25px;
-            text-indent: 70px;
-            letter-spacing: 1.5px;
+            margin-left: 2vw;
+            margin-top: 3vh;
+            text-indent: 5vw;
+            letter-spacing: .10vw;
         }
         #bag{
-            height: 1050px;
-            width: 88%;
+            height: 143vh;
+            width: 88vw;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 10vh;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 500px);
-            gap: 10px;
+            grid-template-rows: repeat(2, 65vh);
+            gap: 1vw;
         }
         #bag>div{
-            width: 100%;
+            width: 28.5vw;
         }
         .bag-img{
-            height: 55%;
-            width: 100%;
+            height: 35vh;
+            width: 28.5vw;
+        }
+        .bag-img1{
+            height: 35vh;
+            width: 28.5vw;
         }
         .bag-h1{
-            font-size: 28px;
+            font-size: 2vw;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
             color: #494949;
             font-weight: 530;
-            margin-top: 8%;
-            margin-left: 3%;
-            letter-spacing: -1px;
+            margin-top: 3vh;
+            letter-spacing: -.10vw;
         }
         .bag-h1:hover{
+            color: black;
+            cursor: pointer;
+        }
+        .bag-h2{
+            font-size: 2vw;
+            font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
+            color: #494949;
+            font-weight: 530;
+            margin-top: 3vh;
+            letter-spacing: -.10vw;
+        }
+        .bag-h2:hover{
             color: black;
             cursor: pointer;
         }
         .bag-p{
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
             color: #494949;
-            margin-left: 3%;
+            margin: 1.5vh 0;
         }
         .bag-p:hover{
             color: black;
             cursor: pointer;
         }
         #end{
-            height: 60px;
+            height: 9vh;
         }
         .end-but{
-            height: 90%;
-            width: 28%;
-            font-size: 20px;
+            height: 9vh;
+            width: 28.5vw;
+            font-size: 1.7vw;
             font-family: "BMWGroupTNProTT-Regular", Arial, Helvetica, sans-serif;
             background: #574c4c;
             color: white;
             border-radius: 5px;
             border: 0;
-            margin-left: 6%;
-            text-indent: -50%;
+            margin-top: -5vh;
+            margin-left: 6vw;
+            text-indent: -12vw;
         }
         .end-but:hover{
             background: #000;
         }
+        @media (max-width:1350px) {
+            
+        }
+        @media (max-width:950px) {
+            #container{
+                height: 65px;
+            }
+            .img-div1{
+                height: 10vh;
+                width: 5vw;
+                margin: 3vh 12vw;
+            }
+            .con-img{
+                height: 7vh;
+                width: 6vw;
+                margin-top: -1vh;
+                gap: 2vw;
+            }
+            .img-div2{
+                height: 10vh;
+                width: 25vw;
+                margin: -1vh 20vw;
+                display: flex;
+            }
+            .con-p{
+                font-size: 1.3vw;
+                position: relative;
+                margin-left: 3vw;
+                white-space: nowrap;
+            }
+            .con-p2{
+                font-size: 1.3vw;
+                position: relative;
+                left: 3vw;
+                margin-right: -1vw;
+            }
+            .con-p3{
+                font-size: 1.3vw;
+                position: relative;
+                left: -5vw;
+            }
+            .con-line1{
+                position: relative;
+                left: 2vw;
+            }
+            .con-line2{
+                position: relative;
+                left: 3.2vw;
+            }
+            .search-icon{
+                position: relative;
+                left: 1vw;
+                top: -.5vh;
+            }
+            .con-line3{
+                margin-left: 1vw;
+                position: relative;
+                left: -2vw;
+            }
+            .line4{
+                margin: 4vh 0;
+            }
+            #des{
+                height: 50vh;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .des-p{
+                letter-spacing: .05vw;
+                margin-top: 3vh;
+            }
+            .line5{
+                margin-top: 8vh;
+            }
+            #box{
+                height: 45vh;
+                margin-top: -2vh;
+            }
+            .box-1{
+                height: 5vh;
+                padding: 2vh 0;
+            }
+            .box-2{
+                height: 45vh;
+                margin-top: -4vh;
+                display: flex;
+            }
+            .box-2>div{
+                height: 25vh;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box2-img{
+                height: 20vh;
+                width: 21vw;
+            }
+            .box-2 P{
+                font-size: 1.5vw;
+                margin-left: 1vw;
+            }
+            #main{
+                height: 55vh;
+                width: 100vw;
+            }
+            .main-1{
+                height: 7vh;
+                font-size: 2.5vw; 
+            }
+            .main-2>div{
+                height: 35vh;
+                width: 28vw;
+                margin-top: 7vh;
+                margin-left: .5vw;
+            }
+            .main2-img{
+                height: 35vh;
+                width: 28vw;
+            }
+            .main2-h1, .main2-h2, .main2-h3{
+                font-size: 2.2vw;
+                margin-top: -32vh;
+                margin-left: 2vw;
+            }
+        }
+        @media (max-width:650px) {
+            #container{
+                height: 80px;
+            }
+            .img-div1{
+                height: 10vh;
+                width: 5vw;
+                margin: 3vh 10vw;
+            }
+            .con-img{
+                height: 3vh;
+                width: 5vw;
+                margin-top: -1vh;
+            }
+            .img-div2{
+                height: 10vh;
+                width: 25vw;
+                margin: -3.5vh 20vw;
+            }
+            .con-p{
+                display: none;
+            }
+            .con-p2{
+                display: none;
+            }
+            .con-line1{
+                height: 0vh;
+            }
+            .con-line1{
+                display: none;
+            }
+            .con-line2{
+                display: none;
+            }
+            .con-line3{
+                display: none;
+            }
+            .line4{
+                margin: -4vh 0;
+            }
+            .search-icon{
+                font-size: 3vw;
+                left: 28vw;
+            }
+            .con-p3{
+                left: 6vw;
+                top: 1vh;
+                font-size: 2.5vw;
+            }
+            #des{
+                height: 40vh;
+                background-size: cover;
+                margin: -13vh 0;
+            }
+            .des-p{
+                letter-spacing: .05vw;
+                margin-top: 3vh;
+            }
+            .line5{
+                margin-top: 17vh;
+            }
+            #box{
+                height: 45vh;
+                margin-top: -5vh;
+            }
+            .box-1{
+                height: 5vh;
+                padding: 2vh 0;
+            }
+            .box-2{
+                height: 38vh;
+                margin-top: -4vh;
+                display: flex;
+            }
+            .box-2>div{
+                height: 25vh;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box2-img{
+                height: 20vh;
+                width: 21vw;
+            }
+            .box-2 P{
+                font-size: 1.5vw;
+                margin-left: 1vw;
+            }
+            #main{
+                height: 55vh;
+                width: 100vw;
+            }
+            .main-1{
+                height: 7vh;
+                font-size: 2.5vw; 
+            }
+            .main-2>div{
+                height: 35vh;
+                width: 28vw;
+                margin-top: 3vh;
+                margin-left: .5vw;
+            }
+            .main2-img{
+                height: 35vh;
+                width: 28vw;
+            }
+            .main2-h1, .main2-h2, .main2-h3{
+                font-size: 2.2vw;
+                margin-top: -32vh;
+                margin-left: 2vw;
+            }
+            #big{
+                height: 295vh;
+            }  
+            .big-1{
+                width: 50vw;
+                font-size: 2.5vw;
+                margin-left: 6.5vw;
+                padding-top: 4vh;
+            }
+            .big-p{
+                font-size: 2.5vw;
+                margin-top: 1vh;
+            }
+            .big-2{
+                height: 55vh;
+            }
+            .big2-img1{
+                height: 45vh;
+                width: 60vw;
+                margin: -2vh 6vw;
+            }
+            .big2-img{
+                height: 45vh;
+                width: 60vw;
+            }
+            .big2-text{
+                height: 45vh;
+                width: 30vw;
+                margin-top: 2vh;
+                margin-left: -4vw;
+            }
+            .big2-h1{
+                font-size: 3vw;
+                margin: 10vh 0;
+            }
+            .big2-p{
+                font-size: 1.5vw;
+                margin: -8vh 0;
+                text-indent: 2vw;
+            }
+            #card{
+                height: 50vh;
+                width: 88vw;
+                display: flex;
+                margin-top: -5vh;
+            }
+            #card>div{
+                height: 40vh;
+                width: 25vw;
+                margin: auto;
+            }
+            .card-img{
+                height: 25vh;
+                width: 25vw;
+            }
+            #cap{
+                height: 50vh;
+            }
+            .cap-1{
+                height: 50vh;
+            }
+            .cap-2{
+                height: 50vh;
+            }
+            .cap-img{
+                height: 50vh;
+            }
+            .cap-h1{
+                margin-top: 20vh;
+            }
+            .cap-p{
+                font-size: 1.5vw;
+                margin-top: 1vh;
+                text-indent: 2.5vw;
+            }
+            #bag{
+                height: 105vh;
+                gap: 1.5vw;
+            }
+            .bag-img{
+                height: 25vh;
+            }
+            .bag-img1{
+                height: 25vh;
+                margin: -12vh 0;
+            }
+            .bag-h1{
+                font-size: 3vw;
+            }
+            .bag-h2{
+                font-size: 3vw;
+                margin: 14vh 0;
+            }
+            .bag-p{
+                font-size: 2vw;
+            }
+            .end-but{
+                height: 5vh;
+                width: 28.5vw;
+                margin-top: 1vh;  
+            }
+        }
+        @media (max-width:350px) {
+            #container{
+                height: 60px;
+            }
+            .con-img{
+                height: 5vh;
+                width: 8vw;
+                margin: -1vh 12vw;
+            }
+            .search-icon{
+                left: 28vw;
+                top: -.3vh;
+                font-size: 4vw;
+            }
+            .con-p3{
+                left: .2vw;
+                font-size: 3.5vw;
+            }
+            .img-div2{
+                height: 15vh;
+                width: 20vw;
+                margin: -3vh 25vw;
+            }
+            .line4{
+                margin: -1vh 0;
+            }
+            #des{
+                height: 20vh;
+                width: auto;
+                background-size: cover;
+                margin: -13vh 0;
+            }
+            .des-p{
+                letter-spacing: .1vw;
+            }
+            #box{
+                height: 32vh;
+            }
+            .box-1{
+                height: 3vh;
+            }
+            .box-2{
+                height: 36vh;
+            }
+            .box-2{
+                height: 30vh;
+            }
+            .box-2>div{
+                height: 18vh;
+            }
+            .box2-img{
+                height: 15vh;
+            }
+            .box-2 P{
+                font-size: 1.8vw;
+                margin-left: 1vw;
+            }
+            #main{
+                height: 35vh;
+            }
+            .main-1{
+                height: 5vh;
+                font-size: 2.5vw; 
+            }
+            .main2-img{
+                height: 20vh;
+                width: 28vw;
+            }
+            .main2-h1, .main2-h2, .main2-h3{
+                margin-top: -18vh;
+            }
+            #big{
+                height: 222vh;
+            }  
+            .big-1{
+                padding-top: 2vh;
+            }
+            .big-2{
+                height: 45vh;
+            }
+            .big2-img1{
+                height: 30vh;
+                margin: -5vh 6vw;
+            }
+            .big2-img{
+                height: 30vh;
+            }
+            .big2-text{
+                height: 30vh;
+                margin-top: -6vh;
+            }
+            .big2-h1{
+                font-size: 4vw;
+                margin: 8vh 0;
+            }
+            .big2-p{
+                font-size: 1.5vw;
+                margin: -7vh 0;
+                line-height: 1.2vh;
+                text-indent: 2vw;
+            }
+            #card{
+                height: 35vh;
+                margin-top: -16vh;
+            }
+            #card>div{
+                height: 40vh;   
+            }
+            .card-img{
+                height: 15vh;
+            }
+            .card-h1, .card-h2, .card-h3{
+                margin-top: 1vh;
+            }
+            #cap{
+                height: 50vh;
+            }
+            .cap-1{
+                height: 50vh;
+            }
+            .cap-2{
+                height: 50vh;
+            }
+            .cap-img{
+                height: 50vh;
+            }
+            .cap-h1{
+                margin-top: 20vh;
+            }
+            .cap-p{
+                font-size: 1.5vw;
+                margin-top: 1vh;
+                text-indent: 2.5vw;
+            }
+            #cap{
+                height: 35vh;
+                margin-top: -8vh;
+            }
+            .cap-1{
+                height: 35vh;
+            }
+            .cap-2{
+                height: 35vh;
+            }
+            .cap-img{
+                height: 35vh;
+            }
+            .cap-h1{
+                margin-top: 13vh;
+                font-size: 2.8vw;
+            }
+            .cap-p{
+                font-size: 1.8vw;
+            }
+            #bag{
+                height: 110vh;
+                gap: 1.5vw;
+            } 
+            .bag-img{
+                height: 20vh;
+            }
+            .bag-img1{
+                height: 20vh;
+                margin: -10vh 0;
+            }
+            .bag-h1{
+                font-size: 3.5vw;
+                margin: 1vh 0;
+        
+            }
+            .bag-h2{
+                font-size: 3.5vw;
+                margin: 11vh 0;
+            }
+            .bag-p{
+                font-size: 2.5vw;
+            }
+            #end{
+                margin: -13vh 0;
+            }
+            .end-but{
+                height: 5vh;
+                width: 28.5vw;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -525,7 +1066,6 @@
                 <div class="con-line3"></div>
                 <p class="con-p3">Menu <i class="fa-solid fa-bars"></i></p>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -620,7 +1160,7 @@
             <div class="cap-2">
                 <img class="cap-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/incargaming_bmw_group_1280x854.png">
             </div>
-        </div>
+        </div>  
         <div id="bag">
             <div>
                 <img class="bag-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/1280x854_bmw-welt-bmw-group.jpg">
@@ -637,16 +1177,16 @@
                 <h1 class="bag-h1">BMW 3D PRINTING TAKES OVER IN PRODUCTION: INDIVIDUAL ROBOT GRIPPERS PLAY A CRUCIAL ROLE.</h1>
             </div>
             <div>
-                <img class="bag-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/humanoide-roboter-teaser-1280x854.png">
-                <h1 class="bag-h1">HUMANOID ROBOTS FOR BMW GROUP PLANT SPARTANBURG.</h1>
+                <img class="bag-img1" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/humanoide-roboter-teaser-1280x854.png">
+                <h1 class="bag-h2">HUMANOID ROBOTS FOR BMW GROUP PLANT SPARTANBURG.</h1>
             </div>
             <div>
-                <img class="bag-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/1280x854_in_car_payment_teaser.png">
-                <h1 class="bag-h1">PAYING MADE EASY-WITH IN-CAR PAYMENT, NEW FORM BMW</h1>
+                <img class="bag-img1" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/1280x854_in_car_payment_teaser.png">
+                <h1 class="bag-h2">PAYING MADE EASY-WITH IN-CAR PAYMENT, NEW FORM BMW</h1>
             </div>
             <div>
-                <img class="bag-img" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/Kooperation_Wasserstoff_Pioniere_1280x854.png">
-                <h1 class="bag-h1">HYDROGEN PIONEERS TAKE COLLABERATION TO THE NEXT LEVEL.</h1>
+                <img class="bag-img1" src="https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/News/2024/Kooperation_Wasserstoff_Pioniere_1280x854.png">
+                <h1 class="bag-h2   ">HYDROGEN PIONEERS TAKE COLLABERATION TO THE NEXT LEVEL.</h1>
             </div>
         </div>
         <div id="end">
